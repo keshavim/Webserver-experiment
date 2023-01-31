@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/root/projects/webCerver/output",
+            "binaryPath": "/root/projects/webCerver/output/main",
+            "binaryArgs": []
+        }
+    ]
+}
