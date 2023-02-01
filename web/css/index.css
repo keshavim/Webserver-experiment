@@ -1,0 +1,160 @@
+/*reset all padding and margin*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*set the body settings*/
+html{
+	background-image: url("/img/person.jpg");
+}
+body{
+	width: 800px;
+	font-family: sans-serif;
+	background-color: white;
+	color: black;
+	margin: auto;
+	border: 2px solid;
+	box-shadow: 5px 5px 10px black;	
+}
+
+
+
+/*header related*/
+
+#pumpkin-img{
+	width: 75px;
+	float:left;
+	margin: auto 20px auto 10px;
+	padding: 15px;
+}
+
+
+header{
+	border-bottom: 2px solid;
+	background-image: linear-gradient(45deg, white 0%, #ff7b00 85%, black);
+}
+header h1{
+	font-size: 2.5em;
+	padding-top: 10px;
+}
+header h2{
+	font-size: 1.1em;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	
+}
+/*creates the top menu*/
+#top_menu ul{
+	list-style: none;
+	padding: 5px 5px 5px 200px;
+	border-top: 2px solid black;
+}
+#top_menu li{
+	display: inline;
+	border: 2px solid black;
+	padding: 5px;
+	transition: all 0.3s ease-in-out;
+}
+#top_menu li a{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+#top_menu li:hover {
+	background-color: rgba(250,250,250, 0.5);
+}
+
+#top_menu li.current{
+	background-color: rgba(0,150,0, 1);
+}
+#top_menu li.current a{
+	color: white;
+}
+#top_menu li.current:hover{
+	background-color: rgba(0,210,0, 1);
+}
+
+/*Main section*/
+section{
+	float: right;
+	width: 585px;
+	margin: 15px;
+}
+section *{
+	padding: 5px;
+}
+
+.initCap:first-letter{
+	font-size: 200%;
+}
+section a{
+	color:orange;
+	font-weight: bold;
+}
+section a:hover{
+	color:#137000
+}
+.float-img{
+	float: left;
+	
+}
+
+/*aside related*/
+aside {
+	float: left;
+	width: 175px;
+	margin: 15px 5px;
+	padding: 15px 0px;
+}
+/*setis up the side menu*/
+#left_side_menu ul{
+	list-style: none;
+	margin-left: 1em;
+	margin-bottom: 1.5em;
+	
+}
+#left_side_menu li{
+	width: 125px;
+	padding-bottom: .5em;
+	
+	
+}
+#left_side_menu li a{
+	display: block;
+	padding: .5em 0em .5em 1.5em;
+	border: 2px solid black;
+	background-color: orange;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+#left_side_menu li a:hover{
+	background-color: #2ac200;
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.4), 0px 6px 10px 0px rgba(0,0,0,0.3);
+}
+
+
+
+/*the footer*/
+footer{
+	clear: both;
+	border-top: 2px solid black;
+	padding: 10px;
+	background-image: linear-gradient(45deg, black, #ff7b00 25%, white);
+	
+}
+footer p{
+	font-size: 85%;
+	text-align: center;
+	
+}
+
+/*sets the super/sub script padding and margins to 0*/
+sup{
+	padding: 0;
+	margin: 0;
+}
+sub{
+	padding: 0;
+	margin: 0;
+}

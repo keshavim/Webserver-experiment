@@ -8,9 +8,11 @@
 #include <sys/types.h>
 
 #include <errno.h>
+#include <stdbool.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -19,8 +21,8 @@
 
 typedef struct sockaddr sockaddr;
 
-#define ASSERT(func, msg)   \
-    if (func)               \
+#define check(func, msg)    \
+    if ((func) == -1)       \
     {                       \
         perror(msg);        \
         exit(EXIT_FAILURE); \
